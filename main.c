@@ -22,3 +22,58 @@
  * About:
  * 
  */
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <string.h>
+#include <netdb.h>
+#include <sqlite3.h>
+
+// the below includes may not be necessary, test to resolve
+//#include <strings.h>
+//#include <errno.h>
+//#include <netinet/in.h>
+//so many damn includes...
+
+int
+main (int argc, char **argv)
+{
+  char *fvalue = NULL;
+  char *mvalue = NULL;
+  int c,index;
+  opterr = 0;
+
+  //getopt checks for options -p and -d
+  //-f [function_name] allows the user to specify a function
+  //-m [modifiers] allows the user to specifcy modifiers
+  while ((c = getopt (argc, argv, "p:d:")) != -1)
+    switch (c)
+      {
+      case 'f':
+        fvalue = optarg;
+        break;
+      case 'm':
+        mvalue = optarg;
+        break;
+      case '?':
+        if (optopt == 'p')
+          fprintf (stderr, "-%c requires an argument.\n", optopt);
+	else if (optopt == 'd')
+	  fprintf (stderr, "-%c requires an argument.\n", optopt);
+        else if (isprint (optopt))
+          fprintf (stderr, "Unknown option `-%c'.\n", optopt);
+        else
+          fprintf (stderr,
+                   "Unknown option character `\\x%x'.\n",
+                   optopt);
+        return 1;
+      default:
+        abort ();
+      }
+  for (index = optind; index < argc; index++)
+    printf ("Non-option argument %s\n", argv[index]);
+}
