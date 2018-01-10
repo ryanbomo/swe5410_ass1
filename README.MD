@@ -4,4 +4,4 @@ This is the README.md for my software testing class.
 
 ## Description
 
-What it do
+Gunna try it in C first, but might switch over to Python later
