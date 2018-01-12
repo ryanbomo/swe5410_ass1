@@ -1,6 +1,6 @@
 # SWE5410 Assignment 1 README
 
-This is the README.md for assignment 1 of Software Testing.  .
+This is the README.md for assignment 1 of Software Testing.
 
 ## Assignment
 
@@ -26,6 +26,24 @@ This stage is fairly straight forward. Simply SSH into cs-scomputer.cs.fit.edu, 
 Phase 1 also includes the task of getting the list of any programs that the user can call a set of numbers from and any parameters those programs can take. If the source for the programs is available, that will be read for this information. If it is not available, then some testing of each program will be done to try and draw reasonable conclusions on the parameters. If the source is available for this, then the deadline is also January 14th. If no source is available than an extra day will be alotted.
 
 ### Phase 2 - Develop Program
+This is the nuts and bolts of the assignment. It will follow the sub bullets from above.
+
+#### Take User Input and Paramters
+This will be accomplished by using getopt. The options will be specified as follows:
+
+Option Flag | Description
+----------- | -----------
+-f          | Program to be run
+-p          | String of parameters the user is passing
+
+
+#### Interface with program using SSH
+
+#### Run the user specified Gallagher Program
+
+#### Take the Programs output
+
+#### Run the Output Through Tests
 
 ### Phase 3 - Testing
 
