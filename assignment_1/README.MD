@@ -1,4 +1,4 @@
-# SWE5410 Assignment 1 README
+# SWE5415 Assignment 1 README
 
 This is the README.md for assignment 1 of Software Testing.
 
