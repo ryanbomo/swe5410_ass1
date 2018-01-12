@@ -28,7 +28,7 @@ Phase 1 also includes the task of getting the list of any programs that the user
 ### Phase 2 - Develop Program
 This is the nuts and bolts of the assignment. It will follow the sub bullets from above.
 
-#### Take User Input and Paramters
+#### 2.1 Take User Input and Paramters
 This will be accomplished by using getopt. The options will be specified as follows:
 
 Option Flag | Description
@@ -37,13 +37,13 @@ Option Flag | Description
 -p          | String of parameters the user is passing
 
 
-#### Interface with program using SSH
+#### 2.2 Interface with program using SSH
 
-#### Run the user specified Gallagher Program
+#### 2.3 Run the user specified Gallagher Program
 
-#### Take the Programs output
+#### 2.4 Take the Programs output
 
-#### Run the Output Through Tests
+#### 2.4 Run the Output Through Tests
 
 ### Phase 3 - Testing
 
