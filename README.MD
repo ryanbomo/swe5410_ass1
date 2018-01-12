@@ -1,7 +1,36 @@
 # SWE5410 Assignment 1 README
 
-This is the README.md for my software testing class.
+This is the README.md for assignment 1 of Software Testing.  .
 
-## Description
+## Assignment
 
-Gunna try it in C first, but might switch over to Python later
+This assignment has multiple sections that can be distilled down into three bullets:
+1. Set up SSH with cs-scompute
+2. Develop a program that can do the following:
+  * Take user input specifying which program to get the list from and the paramters to run it with
+  * Interface with SSH
+  * Run the desired program
+  * Get the set of pairs and the size of the set
+  * Check the programs output set against a series of tests
+3. Test my program to make sure that it works as intended and is not too easy to break 
+
+This is what I've gathered I need to do from the assignment sheet and in class discussion.
+
+## Approach
+
+In order to assure I achieve a working and tested product, I am going to stick to the following plan as best I can.  Any changes that need to be made to the process will be added to this section. Each of the three bullets from the Assignments section will be used as phases for the assignment.
+
+### Phase 1 - Setup SSH with cs-compute
+This stage is fairly straight forward. Simply SSH into cs-scomputer.cs.fit.edu, set up an SSH key and test that I can login through that key. While I am doing this, I will also be documenting the process so that I can help out any other students with this. The goal is to this part of Phase 1 finished by January 14th.
+
+Phase 1 also includes the task of getting the list of any programs that the user can call a set of numbers from and any parameters those programs can take. If the source for the programs is available, that will be read for this information. If it is not available, then some testing of each program will be done to try and draw reasonable conclusions on the parameters. If the source is available for this, then the deadline is also January 14th. If no source is available than an extra day will be alotted.
+
+### Phase 2 - Develop Program
+
+### Phase 3 - Testing
+
+## User Manual
+
+## Bug List
+
+## Version Control
