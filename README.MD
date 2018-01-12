@@ -1,8 +1,8 @@
-# SWE5410 Assignment 1 README
+# SWE5410 Over View README
 
-This is the README.md for assignment 1 of Software Testing.
+This is the README.md for my Software Testing II Assignments.  This will have a short overview of each assignment.
 
-## Assignment
+## Assignment 1
 
 This assignment has multiple sections that can be distilled down into three bullets:
 1. Set up SSH with cs-scompute
@@ -15,40 +15,3 @@ This assignment has multiple sections that can be distilled down into three bull
 3. Test my program to make sure that it works as intended and is not too easy to break 
 
 This is what I've gathered I need to do from the assignment sheet and in class discussion.
-
-## Approach
-
-In order to assure I achieve a working and tested product, I am going to stick to the following plan as best I can.  Any changes that need to be made to the process will be added to this section. Each of the three bullets from the Assignments section will be used as phases for the assignment.
-
-### Phase 1 - Setup SSH with cs-compute
-This stage is fairly straight forward. Simply SSH into cs-scomputer.cs.fit.edu, set up an SSH key and test that I can login through that key. While I am doing this, I will also be documenting the process so that I can help out any other students with this. The goal is to have this part of Phase 1 finished by January 14th.
-
-Phase 1 also includes the task of getting the list of any programs that the user can call a set of numbers from and any parameters those programs can take. If the source for the programs is available, that will be read for this information. If it is not available, then some testing of each program will be done to try and draw reasonable conclusions on the parameters. If the source is available for this, then the deadline is also January 14th. If no source is available than an extra day will be alotted.
-
-### Phase 2 - Develop Program
-This is the nuts and bolts of the assignment. It will follow the sub bullets from above.
-
-#### 2.1 Take User Input and Paramters
-This will be accomplished by using getopt. The options will be specified as follows:
-
-Option Flag | Description
------------ | -----------
--f          | Program to be run
--p          | String of parameters the user is passing
-
-
-#### 2.2 Interface with program using SSH
-
-#### 2.3 Run the user specified Gallagher Program
-
-#### 2.4 Take the Programs output
-
-#### 2.4 Run the Output Through Tests
-
-### Phase 3 - Testing
-
-## User Manual
-
-## Bug List
-
-## Version Control
