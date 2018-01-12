@@ -33,8 +33,8 @@ This will be accomplished by using getopt. The options will be specified as foll
 
 Option Flag | Description
 ----------- | -----------
--f          | Program to be run
--p          | String of parameters the user is passing
+-p          | Program to be run
+-m          | String of modifiers (parameters) the user is passing
 
 
 #### 2.2 Interface with program using SSH
@@ -44,6 +44,16 @@ Option Flag | Description
 #### 2.4 Take the Programs output
 
 #### 2.4 Run the Output Through Tests
+Each out put must be tested for the following:
+1. Is the relation one to one?
+2. Is the relation onto?
+3. Is the relation reflexive?
+4. Is the relation symmetric?
+5. Is the relation transitive?
+6. Is the relation a function?
+7. If the relation is reflexive, symmetric and transitive, display the partitions, one partition per line.
+   - If the partitions are too large, just display the number of partitions
+   - Too large is being taken to mean "won't fit on one line in a standard output (80 characters) \[Thanks IBM!\]"
 
 ### Phase 3 - Testing
 
