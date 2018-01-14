@@ -50,10 +50,10 @@ main (int argc, char **argv)
   //getopt checks for options -p and -d
   //-f [function_name] allows the user to specify a function
   //-m [modifiers] allows the user to specifcy modifiers
-  while ((c = getopt (argc, argv, "p:d:")) != -1)
+  while ((c = getopt (argc, argv, "p:m:")) != -1)
     switch (c)
       {
-      case 'f':
+      case 'p':
         fvalue = optarg;
         break;
       case 'm':
@@ -62,8 +62,8 @@ main (int argc, char **argv)
       case '?':
         if (optopt == 'p')
           fprintf (stderr, "-%c requires an argument.\n", optopt);
-	else if (optopt == 'd')
-	  fprintf (stderr, "-%c requires an argument.\n", optopt);
+	    else if (optopt == 'm')
+	      fprintf (stderr, "-%c requires an argument.\n", optopt);
         else if (isprint (optopt))
           fprintf (stderr, "Unknown option `-%c'.\n", optopt);
         else
