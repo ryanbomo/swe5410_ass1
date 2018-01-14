@@ -37,7 +37,8 @@ Option Flag | Description
 -m          | String of modifiers (parameters) the user is passing
 
 
-#### 2.2 Interface with program using SSH
+#### 2.2 Establish SSH connection and run command
+Because of how C handles strings, this will be a little fun. For this portion, I will use the generated key to run software on my cs-scompute.cs.fit.edu login. The command will 
 
 #### 2.3 Run the user specified Gallagher Program
 
