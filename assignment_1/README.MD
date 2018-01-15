@@ -84,4 +84,5 @@ TBD
 
 ## Version Control
 Version Number format: Major Release . Minor Release . Work Release
+
 **0.0.1** - Initial Version with outline of functions and get opt
