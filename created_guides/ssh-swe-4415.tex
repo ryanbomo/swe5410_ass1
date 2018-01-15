@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx,color,listings,titling}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+\setlength\parindent{0pt}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem*{surfacecor}{Corollary 1}
+\newtheorem{conjecture}{Conjecture} 
+\newtheorem{question}{Question} 
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\begin{document}
+\title{SSH: How To for SWE 4415/5415}
+\author{\vspace{-5ex}}
+\predate{}
+\postdate{}
+\date{}
+\preauthor{}
+\postauthor{}
+
+\maketitle
+
+\section*{What the heckin' frick is SSH?}
+SSH allows you to communicate with another machine in a cryptographically secure way over an unsecured network.  It basically lets you log into another machine and work on that machine.  For this assignment, we need to log into the cs-scompute machine and run code to receive the input for our own programs.  Rather than having to hardcode passwords and having SSH be a regular pain in the butt, using a public/private key set up allows us to quickly log in to a machine securely.
+\section*{Create SSH Key}
+\begin{lstlisting}[language =bash]
+ssh-keygen -t rsa
+\end{lstlisting}
+You will be prompted for a destination.  Using the default destination will make this all easier, so just press ENTER.  You can then decide if you'd like to use a passphrase.  This is different from your login password.  This passphrase makes it so that in order to view the values of your key, the local file needs to be unlocked (this passphrase is not transmitted out).  My recommendation is to not use a passphrase here, as it will make testing difficult.  However I leave it to you to look into what your are comfortable with at this stage.\\
+\\
+You'll get an output describing the key and a nice weird text picture that you can use in the future to verify your key (if that's something you'd like to do).
+
+\section*{Copy Over Generated Key}
+\begin{lstlisting}[language =bash]
+ssh-copy [USER NAME]@cs-scompute.cs.fit.edu
+\end{lstlisting}
+This will copy over the newly generated public portion of your SSH key. You will be prompted for your SSH password (NOTE: this is your normal login passoword, NOT your ssh key passphrase from above). 
+
+\section*{Test That Shiz!}
+You should now be able to login to the cs-scompute.cs.fit.edu without needing your normal login password.
+\begin{lstlisting}[language =bash]
+ssh [USER NAME]@cs-scompute.cs.fit.edu
+\end{lstlisting}
+
+If you used a passphrase, it will prompt you for that now.  Congrats!  You can now SSH in much quicker than before (and running local code with SSH involved is now MUCH easier!)
+
+\section*{Still Don't Work!}
+\begin{lstlisting}[language =bash]
+ssh-add
+\end{lstlisting}
+For some GNOME keyring users, the newly generated key isn't added to your local machines SSH Agent. Running the above on your local machine (the machine that generated the key), will fix that.
+
+\end{document}
