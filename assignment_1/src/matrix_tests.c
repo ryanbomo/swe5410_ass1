@@ -30,29 +30,29 @@
 #include <string.h>
 #include "matrix_tests.h"
 
-int isFunc(int arr[]){
+int isFunc(int *arr){
     
 }
 
-int isOneToOne(int arr[]){
+int isOneToOne(int *arr){
     
 }
 
-int isOnTo(int arr[]){
+int isOnTo(int *arr){
     
 }
 
-int isReflex(int arr[]){
+int isReflex(int *arr){
     
 }
 
-int isSym(int arr[]){
+int isSym(int *arr){
     
 }
-int isTrans(int arr[]){
+int isTrans(int *arr){
     
 }
 
-int partition(int arr[]){
+int partition(int *arr){
     
 }

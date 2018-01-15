@@ -71,7 +71,7 @@ main (int argc, char **argv)
     for (index = optind; index < argc; index++)
         printf ("Non-option argument %s\n", argv[index]);
 
-    getSet(pvalue, mvalue);
+    runSSHUtils(pvalue, mvalue);
   
 }
 

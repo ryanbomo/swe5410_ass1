@@ -33,7 +33,7 @@
 #include <netdb.h>
 
 
-int getSet(char *pvalue, char *mvalue){
+int runSSHUtils(char *pvalue, char *mvalue){
     // Bring Over values
     // Check to Make sure Valid Input
         //If Not, break gracefully
@@ -44,3 +44,27 @@ int getSet(char *pvalue, char *mvalue){
     // Build Matrix based on coordinates in string array
     // Return Matrix
 }
+
+int validateInput(char *pvalue, char *mvalue){
+    
+}
+
+char * createCommand(char *pvalue, char *mvalue){
+    
+}
+
+// heavySSHWork
+/* Connect with SSH
+ * Run Command
+ * Get Input from STDOUT
+ * Build array of String Pointers
+ */
+
+// buildMatrix
+/* Take array of string pointers
+ * First index is matrix dimension
+ * Each next string is a set of coordinates to fill in a 1 in matrix
+ * Matrix Dimesnion should be given to an int variable like matrixSize
+ * Coordinates should be saved to array like so:
+ *      int table[3][2] = {{1,1}, {2,2}, {3,3}};
+ */

@@ -1,3 +1,3 @@
 //ssh_utils header
 
-int getSet(char *pvalue, char *mvalue);
+int runSSHUtils(char *pvalue, char *mvalue);
