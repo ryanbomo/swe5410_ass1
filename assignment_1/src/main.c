@@ -30,6 +30,7 @@
 #include <string.h>
 #include "main.h"
 #include "ssh_utils.h"
+#include "matrix_tests.h"
 
 
 int
@@ -76,29 +77,4 @@ main (int argc, char **argv)
 
 
 
-int isFunc(int arr[]){
-    
-}
 
-int isOneToOne(int arr[]){
-    
-}
-
-int isOnTo(int arr[]){
-    
-}
-
-int isReflex(int arr[]){
-    
-}
-
-int isSym(int arr[]){
-    
-}
-int isTrans(int arr[]){
-    
-}
-
-int partition(int arr[]){
-    
-}
