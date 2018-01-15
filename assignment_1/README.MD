@@ -21,7 +21,7 @@ This is what I've gathered I need to do from the assignment sheet and in class d
 In order to assure I achieve a working and tested product, I am going to stick to the following plan as best I can.  Any changes that need to be made to the process will be added to this section. Each of the three bullets from the Assignments section will be used as phases for the assignment.
 
 ### Phase 1 - Setup SSH with cs-compute
-This stage is fairly straight forward. Simply SSH into cs-scomputer.cs.fit.edu, set up an SSH key and test that I can login through that key. While I am doing this, I will also be documenting the process so that I can help out any other students with this. The goal is to have this part of Phase 1 finished by January 14th.
+This stage is fairly straight forward. Simply SSH into cs-scompute.cs.fit.edu, set up an SSH key and test that I can login through that key. While I am doing this, I will also be documenting the process so that I can help out any other students with this. The goal is to have this part of Phase 1 finished by January 14th.
 
 Phase 1 also includes the task of getting the list of any programs that the user can call a set of numbers from and any parameters those programs can take. If the source for the programs is available, that will be read for this information. If it is not available, then some testing of each program will be done to try and draw reasonable conclusions on the parameters. If the source is available for this, then the deadline is also January 14th. If no source is available than an extra day will be alotted.
 
@@ -59,6 +59,7 @@ testgen      |             | ?
 trans        |             | Gives a Transitive Dataset
 
 #### 2.4 Take the Programs output
+One of the specified instructions of the assignment is that the output of the gallagher program can not be saved to my local disc. I am taking this to mean that I can have the values in memory, but not saved to a file (database or otherwise). As such, the output will be used to help define an array, and the array will be utilized. Once the array is no longer useful, it will have its memory intentionally freed.
 
 #### 2.4 Run the Output Through Tests
 Each out put must be tested for the following:
@@ -73,9 +74,14 @@ Each out put must be tested for the following:
    - Too large is being taken to mean "won't fit on one line in a standard output (80 characters) \[Thanks IBM!\]"
 
 ### Phase 3 - Testing
+Much of assignment 2 will be about running tests on the software, so not too much initial testing will be done. Outside of making sure SSH is handled securely and that results are expected for the data run, no real testing will be finalized until assignment 2.
 
 ## User Manual
+TBD
 
 ## Bug List
+TBD
 
 ## Version Control
+Version Number format: Major Release . Minor Release . Work Release
+**0.0.1** - Initial Version with outline of functions and get opt
