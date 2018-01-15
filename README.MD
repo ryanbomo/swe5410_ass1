@@ -15,3 +15,11 @@ This assignment has multiple sections that can be distilled down into three bull
 3. Test my program to make sure that it works as intended and is not too easy to break 
 
 This is what I've gathered I need to do from the assignment sheet and in class discussion.
+
+## Created Guides
+
+This section will contain any helpful general guides created for class, along with the latex file they were created with. These guides are generally not part of an assignment and were done in order to help other classmates. Writing these also helps solidify my own understanding.
+
+Guide Name   | Description
+------------ | -----------
+ssh-swe-4415 | Setting up ssh key for cs-scompute
