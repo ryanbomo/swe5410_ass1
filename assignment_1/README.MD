@@ -58,7 +58,7 @@ sym.trans    |                      | Gives a Symmetric and Transitive Dataset
 testgen      |                      | ?
 trans        |                      | Gives a Transitive Dataset
 
-I am not 100% sold that the seed flag is a true seed. It might just be a "consistent output" value. It seems that no matter what value is used for the seed, it gives the same output for a given side (i.e. ./onto 10 1 is the same as ./onto 10 560 )
+I am not 100% sold that the seed flag is a true seed. It might just be a "consistent output boolean flag". It seems that no matter what value is used for the seed, it gives the same output for a given size.  For example: ./onto 10 1 is the same as ./onto 10 560. Without the source, I can't confirm this, but I will be operating under this assumption.
 
 #### 2.4 Take the Programs output
 One of the specified instructions of the assignment is that the output of the gallagher program can not be saved to my local disc. I am taking this to mean that I can have the values in memory, but not saved to a file (database or otherwise). As such, the output will be used to help define an array, and the array will be utilized. Once the array is no longer useful, it will have its memory intentionally freed.
