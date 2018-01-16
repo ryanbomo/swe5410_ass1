@@ -45,18 +45,18 @@ Because of how C handles strings, this will be a little fun. For this portion, I
 Once the program has connected to scompute using SSH and navigated to ~kgallagher/public_html/sampleprogs, the following programs are options to be run (and as such, are the potential arguments for the -p flag for getopt):
 
 Program Name | Modifiers            | Description
------------- | -------------------- | -----------
-eq           | \[size\]             | ?
-func         |                      | Gives a datasat that is a Function
-onetoone     | \[size\] \[seed\]    | Gives a One to One Data set
-onto         | \[size\] \[seed\]    | Gives an ONTO dataset
-reflex       |                      | Gives a Reflexive Dataset
-ref.sym      |                      | Gives a Reflexive and Symmetric Dataset
-ref.trans    |                      | Gives a Reflexive and Transitive Dataset
-sym          |                      | Gives a Symmetric dataset
-sym.trans    |                      | Gives a Symmetric and Transitive Dataset
-testgen      |                      | ?
-trans        |                      | Gives a Transitive Dataset
+------------ | --------------------              | -----------
+eq           | \[size\]                          | ?
+func         |                                   | Gives a datasat that is a Function
+onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set
+onto         | \[size\] \[seed\]                 | Gives an ONTO dataset
+reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset
+ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset
+ref.trans    |                                   | Gives a Reflexive and Transitive Dataset
+sym          |                                   | Gives a Symmetric dataset
+sym.trans    |                                   | Gives a Symmetric and Transitive Dataset
+testgen      |                                   | ?
+trans        |                                   | Gives a Transitive Dataset
 
 I am not 100% sold that the seed flag is a true seed. It might just be a "consistent output boolean flag". It seems that no matter what value is used for the seed, it gives the same output for a given size.  For example: ./onto 10 1 is the same as ./onto 10 560. Without the source, I can't confirm this, but I will be operating under this assumption.
 
