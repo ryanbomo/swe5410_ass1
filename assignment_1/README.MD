@@ -78,6 +78,19 @@ Each out put must be tested for the following:
 ### Phase 3 - Testing
 Much of assignment 2 will be about running tests on the software, so not too much initial testing will be done. Outside of making sure SSH is handled securely and that results are expected for the data run, no real testing will be finalized until assignment 2.
 
+## Quick Definitions
+**One To One** -  
+
+**Onto** - 
+
+**Reflexive** - A relation R on a set A is called reflexive if (a, a) ∈ R for every element a ∈ A.
+
+**Symmetric** - A relation R on a set A is called symmetric if (b, a) ∈ R whenever (a, b) ∈ R, for all a, b ∈ A. (i.e. if \[1,3\] then also \[3,1\])
+
+**Transitive** - A relation R on a set A is called transitive if whenever (a, b) ∈ R and (b, c) ∈ R, then (a, c) ∈ R, for all a, b, c ∈ A. (i.e. if \[1,3\] and \[3,4\], then also \[1,4\])
+
+**Function** - 
+
 ## User Manual
 TBD
 
