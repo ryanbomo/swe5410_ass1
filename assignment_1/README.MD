@@ -74,6 +74,11 @@ TBD
 TBD
 
 ## Version Control
-Version Number format: Major Release . Minor Release . Work Release
 
-**0.0.1** - Initial Version with outline of functions and get opt
+Version Number | Description
+-------------- | -----------
+Version 1      | Gives Input as Output
+*Version 1.1*  | Creates Nice Looking Matrix Output of 0s and 1s
+*Version 1.2*  | Passes On to Tests, Tests Print Nice Looking Output and Confirmation
+*Version 1.3*  | P
+*italics* mean that the version is still in progress or not started.
