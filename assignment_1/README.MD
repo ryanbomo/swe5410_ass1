@@ -79,9 +79,9 @@ Each out put must be tested for the following:
 Much of assignment 2 will be about running tests on the software, so not too much initial testing will be done. Outside of making sure SSH is handled securely and that results are expected for the data run, no real testing will be finalized until assignment 2.
 
 ## Quick Definitions
-**One To One** - A relation R on a set A is called *one to one* if for any a1, a2 ∈ A, a1 6= a2 ⇒ f(a1) 6= f(a2). Equivalently, for any a1, a2 ∈ A, f(a1) = f(a2) ⇒ a1 = a2.
+**One To One** - A relation R on a set A is called *one to one* if for any a1, a2 ∈ A, a1 != a2 ⇒ f(a1) != f(a2). Equivalently, for any a1, a2 ∈ A, f(a1) = f(a2) ⇒ a1 = a2. Basically, each element in X is mapped to a unique value of Y or no value. i.e. \[\[1,2\], \[2,1\]\] is one to one, \[\[1,1\],\[1,2\]\] is not.
 
-**Onto** - for all b ∈ B, there exists an a ∈ A such that f(a) = b.
+**Onto** - for all b ∈ B, there exists an a ∈ A such that f(a) = b.   Every Y is mapped to an X value, X values need not be unique.
 
 **Reflexive** - A relation R on a set A is called *reflexive* if (a, a) ∈ R for every element a ∈ A.
 
