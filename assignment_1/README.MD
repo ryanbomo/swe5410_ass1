@@ -79,17 +79,17 @@ Each out put must be tested for the following:
 Much of assignment 2 will be about running tests on the software, so not too much initial testing will be done. Outside of making sure SSH is handled securely and that results are expected for the data run, no real testing will be finalized until assignment 2.
 
 ## Quick Definitions
-**One To One** -  
+**One To One** - A relation R on a set A is called *one to one* if for any a1, a2 ∈ A, a1 6= a2 ⇒ f(a1) 6= f(a2). Equivalently, for any a1, a2 ∈ A, f(a1) = f(a2) ⇒ a1 = a2.
 
-**Onto** - 
+**Onto** - for all b ∈ B, there exists an a ∈ A such that f(a) = b.
 
-**Reflexive** - A relation R on a set A is called reflexive if (a, a) ∈ R for every element a ∈ A.
+**Reflexive** - A relation R on a set A is called *reflexive* if (a, a) ∈ R for every element a ∈ A.
 
-**Symmetric** - A relation R on a set A is called symmetric if (b, a) ∈ R whenever (a, b) ∈ R, for all a, b ∈ A. (i.e. if \[1,3\] then also \[3,1\])
+**Symmetric** - A relation R on a set A is called *symmetric* if (b, a) ∈ R whenever (a, b) ∈ R, for all a, b ∈ A. (i.e. if \[1,3\] then also \[3,1\])
 
-**Transitive** - A relation R on a set A is called transitive if whenever (a, b) ∈ R and (b, c) ∈ R, then (a, c) ∈ R, for all a, b, c ∈ A. (i.e. if \[1,3\] and \[3,4\], then also \[1,4\])
+**Transitive** - A relation R on a set A is called *transitive* if whenever (a, b) ∈ R and (b, c) ∈ R, then (a, c) ∈ R, for all a, b, c ∈ A. (i.e. if \[1,3\] and \[3,4\], then also \[1,4\])
 
-**Function** - 
+**Function** - A relation f on A and B is a *function*, denoted f : A → B if for all a ∈ A, there exists a unique b ∈ B such that (a, b) is a member of the relation, denoted f : a 7→ b or f(a) = b. The Quick and dirty is, each X in the ordered pair is unique.
 
 ## User Manual
 TBD
