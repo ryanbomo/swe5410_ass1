@@ -31,7 +31,7 @@ Phase 1 also includes the task of getting the list of any programs that the user
 
 ### Take Input
 
-Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~ic_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./main **[mymodifiers]** **[mymodifiers]**
+Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~ic_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME}**
 
 Program Name | Modifiers            | Description
 ------------ | --------------------              | -----------
@@ -75,10 +75,13 @@ TBD
 
 ## Version Control
 
+This is the core version of the program. 
+
 Version Number | Description
 -------------- | -----------
-Version 1      | Gives Input as Output
-*Version 1.1*  | Creates Nice Looking Matrix Output of 0s and 1s
-*Version 1.2*  | Passes On to Tests, Tests Print Nice Looking Output and Confirmation
-*Version 1.3*  | P
+Version 1.0    | Creates Nice Looking Matrix Output of 0s and 1s
+*Version 1.1*  | Perform specific test
+*Version 1.2*  | Put each test into its own file (i.e. func test will be a func.c file)
+
+
 *italics* mean that the version is still in progress or not started.

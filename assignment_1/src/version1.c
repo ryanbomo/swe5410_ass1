@@ -28,18 +28,57 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <string.h>
-#include "main.h"
-#include "ssh_utils.h"
-#include "matrix_tests.h"
 
 
 int
-main (int argc, char **argv)
-{
-//print input
+main (int argc, char **argv){
+    //print input
+    char str[100];
+    int i = 0;
+    int x, y;
+    
+    //get dimension
+    scanf("%s", &str);
+    printf("Entered string is %s \n", str);
+    int size = atoi(str);
+    printf("Size is: %d\n",size);
+    
+    
+    // create matrix
+    int matrix[size][size];
+    
+    //get coordinates
+    while(scanf("%s", &str) != EOF){
+        if (i%2 == 0){
+            printf("A coordinate %s", str);
+            x = atoi(str);
+            i++;
+        }
+        else{
+            printf(" , %s \n", str);
+            y = atoi(str);
+            matrix[y-1][x-1] = 1;
+            i++;
+            
+        }
+        
+    }
+    
+    //fill in zeros
+    for (y = 0;y<size;y++){
+        for (x = 0; x<size;x++){
+            if (matrix[y][x] != 1){
+                matrix[y][x] = 0;
+            }
+            printf("%d", matrix[y][x]);
+        }
+        printf("%s", "\n");
+    }
+    
+    //print out matrix
+    
   
 }
-
 
 
 
