@@ -49,8 +49,9 @@ trans        |                                   | Gives a Transitive Dataset
 
 Using the first return of the program as the "size", an array of Size x Size is created and populated with 0's. Then the programs will iterate over each coordinate that comes in and adds a 1 to the matrix.
 
-
 ### Run Tests
+
+Basically each test for the outputs 1 through 7 will be given their own program in the end. I will update this list later once this stage of Phase 2 is reached.
 
 ### Phase 3 - Testing
 Much of assignment 2 will be about running tests on the software, so not too much initial testing will be done. Outside of making sure SSH is handled securely and that results are expected for the data run, no real testing will be finalized until assignment 2.
