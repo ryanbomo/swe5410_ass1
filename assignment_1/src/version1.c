@@ -32,50 +32,50 @@
 
 int
 main (int argc, char **argv){
-    //print input
     char str[100];
-    int i = 0;
-    int x, y;
+    int i, x, y;
+    int numCoords = 0;
     
     //get dimension
     scanf("%s", &str);
-    printf("Entered string is %s \n", str);
     int size = atoi(str);
-    printf("Size is: %d\n",size);
     
     
     // create matrix
+    // blank out the matrix, because reasons C doesn't do that automatically
     int matrix[size][size];
+    for (y = 0;y<size;y++){
+        for (x = 0; x<size;x++){
+            matrix[y][x] = 0;
+        }
+    }
     
     //get coordinates
+    //add a 1 for each coordinate
+    i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            printf("A coordinate %s", str);
+            //printf("[ %s", str);        // prints X coordinate                          DEBUG
             x = atoi(str);
             i++;
         }
         else{
-            printf(" , %s \n", str);
+            //printf(" , %s ] \n", str);  // prints Y coordinate and returns new line     DEBUG
             y = atoi(str);
             matrix[y-1][x-1] = 1;
+            numCoords++;
             i++;
-            
         }
-        
     }
     
-    //fill in zeros
+    //print matrix
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
-            if (matrix[y][x] != 1){
-                matrix[y][x] = 0;
-            }
+            
             printf("%d", matrix[y][x]);
         }
         printf("%s", "\n");
     }
-    
-    //print out matrix
     
   
 }
