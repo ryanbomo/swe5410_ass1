@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ..
 cd ./src
-gcc main.c -o main 
+gcc version1.c -o version1 
