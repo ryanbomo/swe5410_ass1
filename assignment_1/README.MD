@@ -43,7 +43,7 @@ ref.trans    |                                   | Gives a Reflexive and Transit
 sym          |                                   | Gives a Symmetric dataset                        | symmetric_test.c
 sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | **TBD**
 testgen      |                                   | ?                                                | **N/A**
-trans        |                                   | Gives a Transitive Dataset                       | **TBD**
+trans        |                                   | Gives a Transitive Dataset                       | transitive_test.c
 
 ### Create Matrix
 
