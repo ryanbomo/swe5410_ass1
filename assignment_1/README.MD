@@ -39,7 +39,7 @@ onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set  
 onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | **TBD**
 reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset                        | reflexive_test.c
 ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | ref_sym_test.c
-ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | **TBD**
+ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | ref_trans_test.c
 sym          |                                   | Gives a Symmetric dataset                        | symmetric_test.c
 sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | sym_trans_test.c
 testgen      |                                   | ?                                                | **N/A**

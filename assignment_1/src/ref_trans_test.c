@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: version1.c
+/* File Name: ref_trans_test.c
  * Date:
  * About:
  * 
@@ -40,13 +40,10 @@ main (int argc, char **argv){
     scanf("%s", &str);
     int size = atoi(str);
     
-    printf("got here 1\n");
+    
     // create matrix
     // blank out the matrix, because reasons C doesn't do that automatically
     int matrix[size][size];
-    
-    printf("got here 2\n");
-    
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
             matrix[y][x] = 0;
@@ -58,21 +55,20 @@ main (int argc, char **argv){
     i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            printf("[ %s", str);        // prints X coordinate
+            //printf("[ %s", str);        // prints X coordinate                        DEBUG
             x = atoi(str);
             i++;
         }
         else{
-            printf(" , %s ] \n", str);  // prints Y coordinate and returns new line
+            //printf(" , %s ] \n", str);  // prints Y coordinate and returns new line       DEBUG
             y = atoi(str);
             matrix[y-1][x-1] = 1;
             numCoords++;
             i++;
         }
     }
-    
-    printf("got here 3\n");
-    
+                                                                                            
+    /*                                                                                      DEBUG
     //print matrix
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
@@ -81,8 +77,31 @@ main (int argc, char **argv){
         }
         printf("%s", "\n");
     }
+    */
     
-    
+    //Transitive and Reflexive  Check
+    for ( y = 0; y<size;y++){
+        for (x = 0; x<size;x++){
+            if (matrix[y][x] == 1){
+                //check trans
+                for (int z = 0;z<size;z++){
+                    if (matrix[z][y] == 1 && matrix[z][x] != 1){
+                        printf("It's not Transitive\n");
+                        exit(0);
+                        
+                    }
+                }
+            }
+
+        }
+        
+        if (matrix[y][y] != 1){
+            printf("It's not Reflexive\n");
+            exit(0);
+        }
+        
+    }
+    printf("It is Transitive and Reflexive\n");
   
 }
 
