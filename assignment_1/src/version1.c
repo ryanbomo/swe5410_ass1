@@ -55,12 +55,12 @@ main (int argc, char **argv){
     i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            //printf("[ %s", str);        // prints X coordinate                          DEBUG
+            printf("[ %s", str);        // prints X coordinate                          DEBUG
             x = atoi(str);
             i++;
         }
         else{
-            //printf(" , %s ] \n", str);  // prints Y coordinate and returns new line     DEBUG
+            printf(" , %s ] \n", str);  // prints Y coordinate and returns new line     DEBUG
             y = atoi(str);
             matrix[y-1][x-1] = 1;
             numCoords++;
