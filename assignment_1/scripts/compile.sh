@@ -10,3 +10,4 @@ gcc transitive_test.c -o ../build/trans_test
 gcc sym_trans_test.c -o ../build/sym_trans_test
 gcc ref_trans_test.c -o ../build/ref_trans_test
 gcc onto_test.c -o ../build/onto_test
+gcc onetoone_test.c -o ../build/onetoone_test
