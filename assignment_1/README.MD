@@ -41,8 +41,8 @@ reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset    
 ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | ref_sym_test.c
 ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | **TBD**
 sym          |                                   | Gives a Symmetric dataset                        | symmetric_test.c
-sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | **TBD**
-testgen      |                                   | ?                                                | sym_trans_test.c
+sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | sym_trans_test.c
+testgen      |                                   | ?                                                | **N/A**
 trans        |                                   | Gives a Transitive Dataset                       | transitive_test.c
 
 ### Create Matrix
