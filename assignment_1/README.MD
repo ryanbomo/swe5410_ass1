@@ -36,7 +36,7 @@ Program Name | Modifiers                         | Description                  
 eq           | \[size\]                          | ?                                                | **TBD**
 func         |                                   | Gives a datasat that is a Function               | **TBD**
 onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set                      | **TBD**
-onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | **TBD**
+onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | onto_test.c
 reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset                        | reflexive_test.c
 ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | ref_sym_test.c
 ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | ref_trans_test.c
