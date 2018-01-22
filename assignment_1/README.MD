@@ -31,19 +31,19 @@ Phase 1 also includes the task of getting the list of any programs that the user
 
 Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME}**
 
-Program Name | Modifiers            | Description
------------- | --------------------              | -----------
-eq           | \[size\]                          | ?
-func         |                                   | Gives a datasat that is a Function
-onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set
-onto         | \[size\] \[seed\]                 | Gives an ONTO dataset
-reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset
-ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset
-ref.trans    |                                   | Gives a Reflexive and Transitive Dataset
-sym          |                                   | Gives a Symmetric dataset
-sym.trans    |                                   | Gives a Symmetric and Transitive Dataset
-testgen      |                                   | ?
-trans        |                                   | Gives a Transitive Dataset
+Program Name | Modifiers                         | Description                                      | Corresponding C Test Program
+------------ | --------------------------------- | ----------------------------------------------   | -----------------------------
+eq           | \[size\]                          | ?                                                | **TBD**
+func         |                                   | Gives a datasat that is a Function               | **TBD**
+onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set                      | **TBD**
+onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | **TBD**
+reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset                        | reflexive_test.c
+ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | ref_sym_test.c
+ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | **TBD**
+sym          |                                   | Gives a Symmetric dataset                        | symmetric_test.c
+sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | **TBD**
+testgen      |                                   | ?                                                | **N/A**
+trans        |                                   | Gives a Transitive Dataset                       | **TBD**
 
 ### Create Matrix
 

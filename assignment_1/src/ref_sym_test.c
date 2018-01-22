@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: reflexive_test.c
+/* File Name: ref_sym_test.c
  * Date:
  * About:
  * 
@@ -67,7 +67,7 @@ main (int argc, char **argv){
             i++;
         }
     }
-    
+                                                                                            
     /*                                                                                      DEBUG
     //print matrix
     for (y = 0;y<size;y++){
@@ -87,6 +87,17 @@ main (int argc, char **argv){
         }
     }
     printf("It is reflexive\n");
+    
+    // Symmetric Test
+    for ( y = 0; y<size;y++){
+        for (x = 0; x<size;x++){
+            if (matrix[y][x] != matrix[x][y]){
+                printf("It's not symmetric\n");
+                exit(0);
+            }
+        }
+    }
+    printf("And it is symmetric\n");
     
   
 }

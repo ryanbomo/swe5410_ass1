@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: main.c
+/* File Name: symmetric_test.c
  * Date:
  * About:
  * 
@@ -55,19 +55,19 @@ main (int argc, char **argv){
     i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            printf("[ %s", str);        // prints X coordinate                          DEBUG
+            //printf("[ %s", str);        // prints X coordinate                            DEBUG
             x = atoi(str);
             i++;
         }
         else{
-            printf(" , %s ] \n", str);  // prints Y coordinate and returns new line     DEBUG
+            //printf(" , %s ] \n", str);  // prints Y coordinate and returns new line       DEBUG
             y = atoi(str);
             matrix[y-1][x-1] = 1;
             numCoords++;
             i++;
         }
     }
-    
+    /*                                                                                      DEBUG
     //print matrix
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
@@ -76,6 +76,7 @@ main (int argc, char **argv){
         }
         printf("%s", "\n");
     }
+    */
     
     // symmetric test
     for ( y = 0; y<size;y++){

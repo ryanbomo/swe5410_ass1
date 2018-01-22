@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: reflexive_test.c
+/* File Name: transitive_test.c
  * Date:
  * About:
  * 
@@ -55,7 +55,7 @@ main (int argc, char **argv){
     i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            //printf("[ %s", str);        // prints X coordinate                            DEBUG
+            //printf("[ %s", str);        // prints X coordinate                        DEBUG
             x = atoi(str);
             i++;
         }
@@ -67,7 +67,7 @@ main (int argc, char **argv){
             i++;
         }
     }
-    
+                                                                                            
     /*                                                                                      DEBUG
     //print matrix
     for (y = 0;y<size;y++){
@@ -79,14 +79,22 @@ main (int argc, char **argv){
     }
     */
     
-    // Reflexive test
+    //Transitive Check
     for ( y = 0; y<size;y++){
-        if (matrix[y][y] != 1){
-            printf("It's not reflexive\n");
-            exit(0);
+        for (x = 0; x<size;x++){
+            if (matrix[y][x] == 1){
+                for (int z = 0;z<size;z++){
+                    if (matrix[z][y] == 1 && matrix[z][x] != 1){
+                        printf("It's not transitive\n");
+                        exit(0);
+                        
+                    }
+                }
+                
+            }
         }
     }
-    printf("It is reflexive\n");
+    printf("It is Transitive\n");
     
   
 }
