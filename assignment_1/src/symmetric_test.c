@@ -78,16 +78,15 @@ main (int argc, char **argv){
     }
     
     // symmetric test
-    
     for ( y = 0; y<size;y++){
         for (x = 0; x<size;x++){
             if (matrix[y][x] != matrix[x][y]){
-                printf("Matrix is not symmetric\n");
+                printf("It's not symmetric\n");
                 exit(0);
             }
         }
     }
-    printf("Matrix is symmetric\n");
+    printf("It is symmetric\n");
     
   
 }

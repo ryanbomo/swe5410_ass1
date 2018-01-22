@@ -77,17 +77,14 @@ main (int argc, char **argv){
         printf("%s", "\n");
     }
     
-    // symmetric test
-    
+    // Reflexive test
     for ( y = 0; y<size;y++){
-        for (x = 0; x<size;x++){
-            if (matrix[y][x] != matrix[x][y]){
-                printf("Matrix is not symmetric\n");
-                exit(0);
-            }
+        if (matrix[y][y] != 1){
+            printf("It's not reflexive\n");
+            exit(0);
         }
     }
-    printf("Matrix is symmetric\n");
+    printf("It is reflexive\n");
     
   
 }
