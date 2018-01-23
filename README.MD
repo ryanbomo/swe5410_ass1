@@ -7,12 +7,15 @@ This is the README.md for my Software Testing II Assignments.  This will have a 
 This assignment has multiple sections that can be distilled down into three bullets:
 1. Set up SSH with cs-scompute
 2. Develop a program that can do the following:
-   * Take user input specifying which program to get the list from and the paramters to run it with
-   * Pipe the output to program
-   * Check the programs output set against a series of tests
-3. Test my program to make sure that it works as intended and is not too easy to break 
+   * Take an assignment standardized output from stdout and create a matrix with the output.
+   * Check the matrix against a program defined test.
+3. Test my programs to make sure that they work as intended and are not super easy to break.
 
 This is what I've gathered I need to do from the assignment sheet and in class discussion.
+
+## Assignment 2
+
+From the in-class discussion, this will be a series of scripted and timed tests of Assignment 1. The main language looks like it will be in Bash.
 
 ## Created Guides
 
