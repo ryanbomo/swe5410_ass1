@@ -76,7 +76,7 @@ The initial idea was to create one large program where the user could specify wh
 Run ./compile.sh in the scripts folder to compile the code.
 
 ### Reflexive Testing
-Reflexive Testing is done with the reflexive_test.c code. This is compiled into ref_test. To test the reflexive program, the ./ref_test.sh script can be run with the format ./ref_test.sh \[GALLAGHER PROG NAME\]
+Reflexive Testing is done with the reflexive_test.c code. This is compiled into ref_test. To test the reflexive program, the ./ref_test.sh script can be run with the format '''./ref_test.sh [GALLAGHER PROG NAME]'''
 
 ### Symmetric Testing
 
