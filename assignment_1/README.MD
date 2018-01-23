@@ -37,10 +37,10 @@ func         |                                   | Gives a datasat that is a Fun
 onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set                      | onetoone_test.c
 onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | onto_test.c
 reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset                        | reflexive_test.c
-ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | ref_sym_test.c
-ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | ref_trans_test.c
+ref.sym      |                                   | Gives a Reflexive and Symmetric Dataset          | reflexive_test.c and symmetric_tst.c
+ref.trans    |                                   | Gives a Reflexive and Transitive Dataset         | reflexive_test.c and transitive_test.c
 sym          |                                   | Gives a Symmetric dataset                        | symmetric_test.c
-sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | sym_trans_test.c
+sym.trans    |                                   | Gives a Symmetric and Transitive Dataset         | symmetric_test.c and transitive_test.c
 testgen      |                                   | ?                                                | **N/A**
 trans        |                                   | Gives a Transitive Dataset                       | transitive_test.c
 
@@ -69,10 +69,42 @@ Much of assignment 2 will be about running tests on the software, so not too muc
 **Function** - A relation f on A and B is a *function*, denoted f : A → B if for all a ∈ A, there exists a unique b ∈ B such that (a, b) is a member of the relation, denoted f : a |→ b or f(a) = b. The Quick and dirty is, each X in the ordered pair is unique.
 
 ## User Manual
-TBD
+### Overview
+The initial idea was to create one large program where the user could specify what tests to run, and what Gallagher function to call. This was abandoned, as C does not handle matrices very well. Instead, each test is its own program.
+
+### General Use
+Run ./compile.sh in the scripts folder to compile the code.
+
+### Reflexive Testing
+Reflexive Testing is done with the reflexive_test.c code. This is compiled into ref_test. To test the reflexive program, the ./ref_test.sh script can be run with the format ./ref_test.sh \[GALLAGHER PROG NAME\]
+
+### Symmetric Testing
+
+### Transitive Testing
+
+### Equivalence Testing
+
+### Function Testing
+
+### One to One Testing
+
+### Onto Testing
+
+### Combined Tests
+eq_test
+func_test
+onetoone_test
+onto_test
+reflexive_test
+symmetric_test
+transitive_test
+
+
+
 
 ## Bug List
-TBD
+### 001 - Compile Warnings
+I am aware of these.  They don't currently hinder function, they are just really ugly.  I will clean them up eventually.
 
 ## Version Control
 
