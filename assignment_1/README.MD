@@ -76,29 +76,32 @@ The initial idea was to create one large program where the user could specify wh
 Run ./compile.sh in the scripts folder to compile the code.
 
 ### Reflexive Testing
-Reflexive Testing is done with the reflexive_test.c code. This is compiled into ref_test. To test the reflexive program, the ./ref_test.sh script can be run with the format ```./ref_test.sh [GALLAGHER PROG NAME]```
+Reflexive Testing is done with the reflexive_test.c code. This is compiled into ref_test. To test the reflexive program, the ./ref_test.sh script can be run with the format ```./ref_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./ref_test```.
 
 ### Symmetric Testing
+Symmetric Testing is done with the symmetric_test.c code. This is compiled into sym_test. To test the symmetric program, the ./sym_test.sh script can be run with the format ```./sym_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./sym_test```.
 
 ### Transitive Testing
+Transitive Testing is done with the transitive_test.c code. This is compiled into trans_test. To test the transitive program, the ./trans_test.sh script can be run with the format ```./trans_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./trans_test```.
 
 ### Equivalence Testing
+Equivalence Testing is done with the eq_test.c code. This is compiled into eq_test. To test the equivalence program, the ./eq_test.sh script can be run with the format ```./eq_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./eq_test```.
+
+The output of the Equivalence Test will be a series of cluters unless the size of the domain is larger than 80, then it outputs only the number of clusters.
 
 ### Function Testing
+Function Testing is done with the func_test.c code. This is compiled into func_test. To test the function program, the ./func_test.sh script can be run with the format ```./func_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./func_test```.
+
+This currently uses a wonky version of One to One and Onto testing, but will be fixed with a later version. It does work though.
 
 ### One to One Testing
+One to One Testing is done with the onetoone_test.c code. This is compiled into onetoone_test. To test the One to One program, the ./onetoone_test.sh script can be run with the format ```./onetoone_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./onetoone_test```.
 
 ### Onto Testing
+Onto Testing is done with the onto_test.c code. This is compiled into onto_test. To test the Onto program, the ./onto_test.sh script can be run with the format ```./onto_test.sh [GALLAGHER PROG NAME]``` from the scripts folder. It can also be called with just ```./onto_test```.
 
 ### Combined Tests
-eq_test
-func_test
-onetoone_test
-onto_test
-reflexive_test
-symmetric_test
-transitive_test
-
+Initially, I though that each of the combined progams listed on Dr. Gallagher's folder would need to be their own separate programs as well. These were unnecessary, but can be found in my archive folder.
 
 
 
@@ -113,8 +116,4 @@ This is the core version of the program.
 Version Number | Description
 -------------- | -----------
 Version 1.0    | Creates Nice Looking Matrix Output of 0s and 1s
-*Version 1.1*  | Perform specific test
-*Version 1.2*  | Put each test into its own file (i.e. func test will be a func.c file)
-
-
-*italics* mean that the version is still in progress or not started.
+Version 1.1 | Put each test into its own file (i.e. func test will be a func_test.c file)
