@@ -6,10 +6,9 @@ This is the README.md for assignment 1 of Software Testing.
 
 This assignment has multiple sections that can be distilled down into three bullets:
 1. Set up SSH with cs-scompute
-2. Develop a program that can do the following:
-   * Take user input specifying which program to get the list from and the paramters to run it with
-   * Pipe the output to program
-   * Check the programs output set against a series of tests
+2. Develop a series of programs that can do the following:
+   * Take piped output in a predifined format
+   * Check the programs output set against a test specific to each program
 3. Test my program to make sure that it works as intended and is not too easy to break 
 
 This is what I've gathered I need to do from the assignment sheet and in class discussion.
@@ -34,7 +33,7 @@ Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_h
 Program Name | Modifiers                         | Description                                      | Corresponding C Test Program
 ------------ | --------------------------------- | ----------------------------------------------   | -----------------------------
 eq           | \[size\]                          | ?                                                | **TBD**
-func         |                                   | Gives a datasat that is a Function               | **TBD**
+func         |                                   | Gives a datasat that is a Function               | func_test.c
 onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set                      | onetoone_test.c
 onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | onto_test.c
 reflex       | \[size\] \[numCoords\] \[seed\]   | Gives a Reflexive Dataset                        | reflexive_test.c

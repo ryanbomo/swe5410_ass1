@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: ref_sym_test.c
+/* File Name: func_test.c
  * Date:
  * About:
  * 
@@ -28,6 +28,14 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <string.h>
+
+/* *************** WARNING *****************
+ * This is not the standard set up of matrix[y][x] for (X,Y) coordinates (where X refers to column, and Y refers to row as standard)
+ * This uses the reverse: matrix[x][y].  Information is preserved, but the output would be a bit more difficult to show.
+ * This was done to use the really easy function check (each X should have 1 and only 1 Y value).  By making it so that
+ * the program can just look at all of the x values as an array.
+ */
+
 
 
 int
@@ -46,7 +54,7 @@ main (int argc, char **argv){
     int matrix[size][size];
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
-            matrix[y][x] = 0;
+            matrix[x][y] = 0;
         }
     }
     
@@ -62,12 +70,11 @@ main (int argc, char **argv){
         else{
             //printf(" , %s ] \n", str);  // prints Y coordinate and returns new line       DEBUG
             y = atoi(str);
-            matrix[y-1][x-1] = 1;
+            matrix[x-1][y-1] = 1;
             numCoords++;
             i++;
         }
     }
-                                                                                            
     /*                                                                                      DEBUG
     //print matrix
     for (y = 0;y<size;y++){
@@ -79,24 +86,29 @@ main (int argc, char **argv){
     }
     */
     
-    // Reflexive test
-    for ( y = 0; y<size;y++){
-        if (matrix[y][y] != 1){
-            printf("It's not reflexive\n");
-            exit(0);
-        }
-    }
-    
-    // Symmetric Test
-    for ( y = 0; y<size;y++){
-        for (x = 0; x<size;x++){
-            if (matrix[y][x] != matrix[x][y]){
-                printf("It's not symmetric\n");
-                exit(0);
+    // Func test
+    int xHasY = 0;
+    for ( x = 0; x<size;x++){
+        xHasY = 0;
+        for (y = 0; y<size;y++){
+            //check for more than one Y
+            if (matrix[x][y] == 1){
+                if (xHasY == 1){
+                    printf("It is not a function\n");
+                    exit(0);
+                }
+                xHasY = 1;
             }
         }
+        
+        // check if it has no Y
+        if (xHasY == 0){
+            printf("It is a function\n");
+            exit(0);
+        }
+       
     }
-    printf("It is Reflexive and it is symmetric\n");
+    printf("It is a function\n");
     
   
 }
