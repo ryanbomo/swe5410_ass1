@@ -85,7 +85,7 @@ main (int argc, char **argv){
     }
     */
     
-    //Transitive and Reflexive  Check
+    //Transitive Symmetric and Reflexive  Check
     for ( y = 0; y<size;y++){
         for (x = 0; x<size;x++){
             if (matrix[y][x] == 1){
@@ -97,17 +97,53 @@ main (int argc, char **argv){
                         
                     }
                 }
+                
+                //check sym
+                if (matrix[y][x] != matrix[x][y]){
+                    printf("It is not Symmetric\n");
+                    exit(0);
+                }
             }
 
         }
-        
+        // check ref
         if (matrix[y][y] != 1){
             printf("It's not Reflexive\n");
             exit(0);
         }
         
     }
-    printf("It is Transitive and Reflexive\n");
+    printf("It is Transitive Symmetric and Reflexive\n");
+    
+    int printed[size];
+    int numClusts = 0;
+    for (y = 0; y<size; y++){
+        printed[y] =0;
+    }
+    
+    
+    //will only print clusters if the total size (and thus the potential number of clusters) is less than 80
+    
+    for (y = 0; y<size; y++){
+        if (printed[y] == 0){
+            if (size<80){
+                printf("\n");
+            }
+            numClusts++;
+        }
+        for (x = 0; x<size; x++){
+            if (matrix[y][x] == 1 && printed[x] != 1){
+                if(size <80){
+                    printf("%d ",x+1);
+                }
+                printed[x] = 1;
+            }
+        }
+    }
+    
+    printf("\nNumber of clusters: %d\n", numClusts);
+    
+    
   
 }
 

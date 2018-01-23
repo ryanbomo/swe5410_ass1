@@ -32,7 +32,7 @@ Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_h
 
 Program Name | Modifiers                         | Description                                      | Corresponding C Test Program
 ------------ | --------------------------------- | ----------------------------------------------   | -----------------------------
-eq           | \[size\]                          | ?                                                | **TBD**
+eq           | \[size\]                          | ?                                                | eq_test.c
 func         |                                   | Gives a datasat that is a Function               | func_test.c
 onetoone     | \[size\] \[seed\]                 | Gives a One to One Data set                      | onetoone_test.c
 onto         | \[size\] \[seed\]                 | Gives an ONTO dataset                            | onto_test.c

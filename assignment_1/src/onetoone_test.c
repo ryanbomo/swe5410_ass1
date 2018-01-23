@@ -40,6 +40,12 @@ main (int argc, char **argv){
     scanf("%s", &str);
     int size = atoi(str);
     
+    if (size >= 1000){
+        printf("Currently not working with size values greater than 999. Sorry.\n");
+        exit(1);
+    }
+    
+    
     
     // create matrix and blank out the matrix, because reasons 
     // (C doesn't do that automatically)

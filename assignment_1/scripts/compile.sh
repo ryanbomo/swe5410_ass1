@@ -12,3 +12,4 @@ gcc ref_trans_test.c -o ../build/ref_trans_test
 gcc onto_test.c -o ../build/onto_test
 gcc onetoone_test.c -o ../build/onetoone_test
 gcc func_test.c -o ../build/func_test
+gcc eq_test.c -o ../build/eq_test
