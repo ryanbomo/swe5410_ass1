@@ -125,22 +125,16 @@ main (int argc, char **argv){
     //will only print clusters if the total size (and thus the potential number of clusters) is less than 80
     for (y = 0; y<size; y++){
         if (printed[y] == 0){
-            printf("\n");
-            /*
             if (size<80){
                 printf("\n");
-            }*/
+            }
             numClusts++;
         }
         for (x = 0; x<size; x++){
             if (matrix[y][x] == 1 && printed[x] != 1){
-                
-                printf("%d ", x+1);
-                /*
                 if(size <80){
                     printf("%d ",x+1);
                 }
-                */
                 printed[x] = 1;
             }
         }

@@ -44,15 +44,12 @@ main (int argc, char **argv){
         printf("Currently not working with size values greater than 999. Sorry.\n");
         exit(1);
     }
-    printf("Size is %d\n", size);
     
     
-    printf("got here 1\n");
+
     // create matrix
     // blank out the matrix, because reasons C doesn't do that automatically
     int matrix[size][size];
-    
-    printf("got here 2\n");
     
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
@@ -65,21 +62,18 @@ main (int argc, char **argv){
     i = 0;  //walking variable to differentiate X and Y input
     while(scanf("%s", &str) != EOF){
         if (i%2 == 0){
-            printf("[ %s", str);        // prints X coordinate
+           // printf("[ %s", str);        // prints X coordinate
             x = atoi(str);
             i++;
         }
         else{
-            printf(" , %s ] \n", str);  // prints Y coordinate and returns new line
+           // printf(" , %s ] \n", str);  // prints Y coordinate and returns new line
             y = atoi(str);
             matrix[y-1][x-1] = 1;
             numCoords++;
             i++;
         }
-    }
-    
-    printf("got here 3\n");
-    
+    } 
     //print matrix
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
