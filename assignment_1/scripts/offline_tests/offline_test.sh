@@ -5,4 +5,4 @@ if [ -z "$1" ]
     exit 1
 fi
 
-./test_params.sh | ../../build/$1
+./test_params_1.sh | ../../build/$1

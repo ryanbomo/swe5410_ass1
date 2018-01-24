@@ -44,6 +44,7 @@ main (int argc, char **argv){
         printf("Currently not working with size values greater than 999. Sorry.\n");
         exit(1);
     }
+    printf("Size is %d\n", size);
     
     
     printf("got here 1\n");
