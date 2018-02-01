@@ -32,12 +32,12 @@
 
 int
 main (int argc, char **argv){
-    char str[100];
+    char str[10];
     int i, x, y;
     int numCoords = 0;
     
     //get dimension
-    scanf("%s", &str);
+    scanf("%s", str);
     int size = atoi(str);
     
     if (size > 1000){
@@ -59,7 +59,7 @@ main (int argc, char **argv){
     //get coordinates
     //add a 1 for each coordinate
     i = 0;  //walking variable to differentiate X and Y input
-    while(scanf("%s", &str) != EOF){
+    while(scanf("%s", str) != EOF){
         if (i%2 == 0){
             //printf("[ %s", str);        // prints X coordinate                        DEBUG
             x = atoi(str);

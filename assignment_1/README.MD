@@ -106,8 +106,12 @@ Initially, I though that each of the combined progams listed on Dr. Gallagher's 
 
 
 ## Bug List
+### 002 - Array Sizing
+Currently the max size of the 2D array is limited to roughly 1200x1200.  This is due to not allocating the memory, but relying on the compiler to do so.  For an initial submission, this is acceptable, but I need to be able to send MUCH larger arrays for the testing that the professor would like to do.  Thus a malloc based solution is needed.
+
+## Fixed Bugs
 ### 001 - Compile Warnings
-I am aware of these.  They don't currently hinder function, they are just really ugly.  I will clean them up eventually.
+Bug 001 is fixed.  I was passing scanf the wrong variable to write to.
 
 ## Version Control
 

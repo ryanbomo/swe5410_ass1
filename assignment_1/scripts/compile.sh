@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ..
-mkdir build
+mkdir build > build.log 2>error.log
 cd ./src
 gcc version1.c -o ../build/version1 
 gcc symmetric_test.c -o ../build/sym_test
