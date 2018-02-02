@@ -17,7 +17,7 @@
       along with this program; if not, write to the Free Software
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
-/* File Name: ref_trans_test.c
+/* File Name: eq_test.c
  * Date:
  * About:
  * 
@@ -39,17 +39,13 @@ main (int argc, char **argv){
     //get dimension
     scanf("%s", str);
     int size = atoi(str);
-    
-    if (size > 1000){
-        printf("Currently not working with size values greater than 999. Sorry.\n");
-        exit(1);
-    }
-    
-    
-    
+        
     // create matrix
     // blank out the matrix, because reasons C doesn't do that automatically
-    int matrix[size][size];
+    int **matrix = (int **)malloc(size*sizeof(int*));
+    for (i=0;i<size;i++){
+        matrix[i] = (int *)malloc(size*sizeof(int));
+    }
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
             matrix[y][x] = 0;
@@ -142,7 +138,7 @@ main (int argc, char **argv){
     
     printf("\nNumber of clusters: %d\n", numClusts);
     
-    
+    free(matrix);
   
 }
 

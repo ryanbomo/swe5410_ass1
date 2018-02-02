@@ -32,25 +32,20 @@
 
 int
 main (int argc, char **argv){
-    char str[100];
+    char str[10];
     int i, x, y;
     int numCoords = 0;
     
-    // get dimension
+    //get dimension
     scanf("%s", str);
     int size = atoi(str);
-    
-    if (size >= 1000){
-        printf("Currently not working with size values greater than 999. Sorry.\n");
-        exit(1);
+        
+    // create matrix
+    // blank out the matrix, because reasons C doesn't do that automatically
+    int **matrix = (int **)malloc(size*sizeof(int*));
+    for (i=0;i<size;i++){
+        matrix[i] = (int *)malloc(size*sizeof(int));
     }
-    
-    
-    
-    // create matrix and blank out the matrix, because reasons 
-    // (C doesn't do that automatically)
-
-    int matrix[size][size];
     for (y = 0;y<size;y++){
         for (x = 0; x<size;x++){
             matrix[y][x] = 0;
