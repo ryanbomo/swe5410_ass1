@@ -11,11 +11,11 @@ if [ -z "$4" ] || [ "$1" == "help" ]
     exit 1
 fi
 
-if [ "$5"=="DEL" ]
+if [ "$5" == "DEL" ]
   then
     echo "Delete Logs"
-    [ -e log.log ] && rm file
-    [ -e error.log ] && rm file
+    [ -e log.log ] && rm log.log
+    [ -e error.log ] && rm error.log
 fi
 
 
