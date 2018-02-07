@@ -28,7 +28,7 @@ Phase 1 also includes the task of getting the list of any programs that the user
 
 ### Take Input
 
-Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME]**
+Pipe it in using: ssh *rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/* **[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME]**
 
 Program Name | Modifiers                         | Description                                      | Corresponding C Test Program
 ------------ | --------------------------------- | ----------------------------------------------   | -----------------------------
