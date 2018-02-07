@@ -28,7 +28,7 @@ Phase 1 also includes the task of getting the list of any programs that the user
 
 ### Take Input
 
-Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME}**
+Pipe it in using: ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/**[PROGRAM NAME]** **[MODIFIER]** **[MODIFIER]** **[MODIFIER]** | ./**[PROGRAM NAME]**
 
 Program Name | Modifiers                         | Description                                      | Corresponding C Test Program
 ------------ | --------------------------------- | ----------------------------------------------   | -----------------------------
@@ -103,15 +103,14 @@ Onto Testing is done with the onto_test.c code. This is compiled into onto_test.
 ### Combined Tests
 Initially, I though that each of the combined progams listed on Dr. Gallagher's folder would need to be their own separate programs as well. These were unnecessary, but can be found in my archive folder.
 
-
-
 ## Bug List
-### 002 - Array Sizing
-Currently the max size of the 2D array is limited to roughly 1200x1200.  This is due to not allocating the memory, but relying on the compiler to do so.  For an initial submission, this is acceptable, but I need to be able to send MUCH larger arrays for the testing that the professor would like to do.  Thus a malloc based solution is needed.
 
 ## Fixed Bugs
 ### 001 - Compile Warnings
 Bug 001 is fixed.  I was passing scanf the wrong variable to write to.
+
+### 002 - Array Sizing
+Currently the max size of the 2D array is limited to roughly 1200x1200.  This is due to not allocating the memory, but relying on the compiler to do so.  For an initial submission, this is acceptable, but I need to be able to send MUCH larger arrays for the testing that the professor would like to do.  Thus a malloc based solution is needed. Now using malloc correctly.
 
 ## Version Control
 
