@@ -103,6 +103,7 @@ main (int argc, char **argv){
         */
     }
     printf("It is One to One\n");
+    free(matrix);
     
   
 }

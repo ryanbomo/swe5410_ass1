@@ -90,6 +90,7 @@ main (int argc, char **argv){
         }
     }
     printf("It is symmetric\n");
+    free(matrix);
     
   
 }

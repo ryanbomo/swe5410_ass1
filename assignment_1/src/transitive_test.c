@@ -97,6 +97,7 @@ main (int argc, char **argv){
         }
     }
     printf("It is Transitive\n");
+    free(matrix);
     
   
 }

@@ -95,6 +95,7 @@ main (int argc, char **argv){
         }
     }
     printf("It is onto\n");
+    free(matrix);
     
   
 }

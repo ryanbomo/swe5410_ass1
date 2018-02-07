@@ -78,6 +78,7 @@ main (int argc, char **argv){
         }
         printf("%s", "\n");
     }
+    free(matrix);
     
     
   

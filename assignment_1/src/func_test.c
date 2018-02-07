@@ -111,7 +111,7 @@ main (int argc, char **argv){
        
     }
     printf("It is a function\n");
-    
+    free(matrix);
   
 }
 
