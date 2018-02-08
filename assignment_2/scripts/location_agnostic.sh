@@ -1,5 +1,7 @@
 #! /bin/bash
 
+## Check input for necessary parameters.
+## Does not check input for validity
 if [ -z "$2" ] || [ "$1" == "help" ]
   then
     echo "Parameters are [USER] [Build Folder Path] [Modifier 1] [Modifier 2] [DEL Logs]"
@@ -12,7 +14,7 @@ if [ -z "$2" ] || [ "$1" == "help" ]
 fi
 
 
-
+## Make the variables
 USER=$1
 LOC=$2
 TESTSITE=$USER@cs-scompute.cs.fit.edu
@@ -21,6 +23,9 @@ ORACLEPATH=~kgallagher/public_html/oracles/
 DATE=`date '+%Y-%m-%d_%H:%M:%S'`
 LOGNAME=$DATE.log
 ERRORNAME=$DATE.err
+
+## Lists need to be of same length and have indices correspond
+## i.e. The first index for each one needs to match across (eq, eq, eq_test)
 GENERATORS=(
             eq
             func
@@ -50,13 +55,21 @@ MYPROGS=(
             trans_test
         )
 
+## If DEL flag, delete logs with same name as this one's log
 if [ "$5" == "DEL" ]
   then
     echo "Delete Logs"
-    [ -e log.log ] && rm $LOGNAME
-    [ -e error.log ] && rm $ERRORNAME
+    [ -e $LOGNAME ] && rm $LOGNAME
+    [ -e $ERRORNAME ] && rm $ERRORNAME
 fi
 
+
+## For each item in the generator list do the following:
+##      1. Print out the output of the Generator
+##      2. Pipe Generator Output to my corresponding program
+##      3. Pipe Generator Output to corresponding oracle
+## Write any output to the run log
+## Write errors and verbose information to err log
 for ((II=0; II < ${#GENERATORS[@]}; ++II)) do
 
   echo $TESTSITE $TESTPATH${GENERATORS[II]} $3 $4 >> $LOGNAME
@@ -84,3 +97,6 @@ for ((II=0; II < ${#GENERATORS[@]}; ++II)) do
 
 
 done
+
+## Future Fix:
+## Output for C files should be made to try and match his output exactly, that way the actual outputs can be compared directly, thus allowing for even further automation of testing.
