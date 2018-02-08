@@ -1,5 +1,7 @@
 #! /bin/bash
 
+## location_agnostic.sh is a test script that the user can run from anywhere.  It takes the path to the build directory as a parameter, thus making it location agnostic.
+
 ## Check input for necessary parameters.
 ## Does not check input for validity
 if [ -z "$2" ] || [ "$1" == "help" ]

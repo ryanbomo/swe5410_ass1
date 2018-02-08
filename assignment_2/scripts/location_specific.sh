@@ -1,5 +1,7 @@
 #! /bin/bash
 
+## location_specific.sh is a test script that must be run from the scripts folder of the assignment_2 directory.  It uses internal logic to navigate to the build folder.  Thus, it is location specific.
+
 ## Check input for necessary parameters.
 ## Does not check input for validity
 if [ -z "$1" ] || [ "$1" == "help" ]
