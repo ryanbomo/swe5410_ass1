@@ -19,8 +19,7 @@ cd ../
 LOC=`pwd -P`
 LOC="$LOC/build/"
 cd $SCRIPTPATH
-USER=$1
-TESTSITE=$USER@cs-scompute.cs.fit.edu
+TESTSITE=$1@cs-scompute.cs.fit.edu
 TESTPATH=~kgallagher/public_html/sampleprogs/
 ORACLEPATH=~kgallagher/public_html/oracles/
 DATE=`date '+%Y-%m-%d_%H:%M:%S'`
