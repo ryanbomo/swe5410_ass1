@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: eq_test.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */

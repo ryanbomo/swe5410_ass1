@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: reflexive_test.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */
@@ -88,7 +88,7 @@ main (int argc, char **argv){
             exit(0);
         }
     }
-    printf("It is reflexive\n");
+    printf("Is reflexive\n");
     free(matrix);
     
   

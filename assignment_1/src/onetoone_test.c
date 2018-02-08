@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: onetoone_test.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */
@@ -102,7 +102,7 @@ main (int argc, char **argv){
         }
         */
     }
-    printf("It is One to One\n");
+    printf("Is one to one\n");
     free(matrix);
     
   

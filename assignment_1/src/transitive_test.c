@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: transitive_test.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */
@@ -96,7 +96,7 @@ main (int argc, char **argv){
             }
         }
     }
-    printf("It is Transitive\n");
+    printf("Is transitive\n");
     free(matrix);
     
   

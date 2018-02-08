@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: version1.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */
@@ -71,7 +71,7 @@ main (int argc, char **argv){
         }
     } 
     //print matrix
-    for (y = 0;y<size;y++){
+    for (y = size -1 ;y>=0;y--){
         for (x = 0; x<size;x++){
             
             printf("%d", matrix[y][x]);

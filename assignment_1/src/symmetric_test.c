@@ -18,7 +18,7 @@
       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.              */
 /* ------------------------------------------------------------------------- */
 /* File Name: symmetric_test.c
- * Date:
+ * Date: 02/07/2018
  * About:
  * 
  */
@@ -89,7 +89,7 @@ main (int argc, char **argv){
             }
         }
     }
-    printf("It is symmetric\n");
+    printf("Is symmetric\n");
     free(matrix);
     
   
