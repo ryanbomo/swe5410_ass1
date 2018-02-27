@@ -8,4 +8,4 @@ fi
 FUNC1=$1
 
 cd ../build
-ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/$FUNC1 10 10 | ./sym_test
+ssh rbomalaski2015@cs-scompute.cs.fit.edu ~kgallagher/public_html/sampleprogs/$FUNC1 1000 1000 | ./sym_test
